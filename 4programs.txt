@@ -1,0 +1,74 @@
+# Enter two numbers by User
+
+Q1.Calculate the multiplication and sum of two numbers
+
+num1 = int(input("Enter the Number ="))
+num2 = int(input("Enter the Number ="))
+
+#  The sum of Number
+sum_result = num1 + num2
+
+#  The multiplicationif Number
+multiplication_result = num1 * num2
+
+# Output the results
+print("Sum of Two number is :", sum_result)
+print("Multiplication of Two number is :", multiplication_result)
+
+
+
+# Declare two variables
+var1 = 45
+ver2 = 49
+
+# Useing a ternary operator to print the largest variable
+largest = var1 if var1 > ver2 else ver2
+print(f"The largest number is: {largest}")
+
+
+
+
+
+Q2.Declare two variables and print that which variable is largest using ternary operators
+
+# Declare two variables
+var1 = int(input("Enter the Number ="))
+ver2 = int(input("Enter the Number ="))
+
+# Useing a ternary operator to print the largest variable
+largest = var1 if var1 > ver2 else ver2
+print(f"The largest number is: {largest}")
+
+
+Q3.Python program to convert the temperature in degree centigrade to Fahrenheit
+
+# Function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+# Taking input from user
+try:
+    celsius = float(input("Enter the temperature in degrees Celsius: "))
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    print(f"The temperature in Fahrenheit is: {fahrenheit:.2f}°F")
+except ValueError:
+    print("Please enter a valid number.")
+
+
+
+
+Q4.Python program to find the area of a triangle whose sides are given
+ 
+# sides of the triangle given below
+a = 3
+b = 4
+c = 5
+
+# Semi-perimeter
+s = (a + b + c) / 2
+
+# Area calculation using Heron's formula
+area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+
+# Output of area of triangle
+print(f"The area of the triangle is: {area:.2f}")

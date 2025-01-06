@@ -1,7 +1,7 @@
-# Enter two numbers by User
+
 
 Q1.Calculate the multiplication and sum of two numbers
-
+# Enter two numbers by User
 num1 = int(input("Enter the Number ="))
 num2 = int(input("Enter the Number ="))
 

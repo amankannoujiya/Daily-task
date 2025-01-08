@@ -1,0 +1,57 @@
+1.Using input() function take one number from the user and using ternary operators check whether the number is even or odd
+
+# Taking input from the user
+number = int(input("Enter a number: "))
+
+# Using a ternary operator to check if the number is even or odd
+result = "Even" if number % 2 == 0 else "Odd"
+
+# Display the result
+print(f"The number {number} is {result}.")
+
+-----------------------------------------------------------------------------------------------------
+
+2.Using input function take two number and then swap the number
+
+# Taking input from the user
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+print(f"Before swapping: number1 = {number1}, number2 = {number2}")
+
+# Swapping the numbers
+number1, number2 = number2, number1
+
+# Display the result
+print(f"After swapping: number1 = {number1}, number2 = {number2}")
+
+-----------------------------------------------------------------------------------------------------
+
+3.Write a Program to Convert Kilometers to Miles
+
+# Taking input from the user
+kilometers = float(input("Enter the distance in kilometers: "))
+
+# Conversion factor
+conversion_factor = 0.621371
+
+# Converting kilometers to miles
+miles = kilometers * conversion_factor
+
+# Display the result
+print(f"{kilometers} kilometers is equal to {miles} miles.")
+
+-----------------------------------------------------------------------------------------------------
+
+4.Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+# Taking inputs from the user
+principal = float(input("Enter the principal amount (Rs.): "))
+rate = float(input("Enter the rate of interest (% per year): "))
+time = float(input("Enter the time (in years): "))
+
+# Simple Interest formula
+simple_interest = (principal * rate * time) / 100
+
+# Display the result
+print(f"The Simple Interest on Rs. {principal} for {time} years at {rate}% per year is Rs. {simple_interest}.")

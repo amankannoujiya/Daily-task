@@ -1,0 +1,73 @@
+1. Declare a div() function with two parameters. Then call the function and pass two
+numbers and display their division.
+
+
+def div(a, b):
+    return a / b
+
+# Accept input from the user
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+
+# Call the function and display the result
+if number2 != 0:
+    result = div(number1, number2)
+    print("The result of division is:", result)
+else:
+    print("Division by zero is not allowed.")
+--------------------------------------------------------------------------------------------------------------------------
+
+
+2. Declare a square() function with one parameter.Then call the function and pass one
+number and display the square of that number .
+
+def square(x):
+    return x ** 2
+
+# Accept input from the user
+Number = float(input("Enter a number: "))
+
+# Call the function and display the result
+result = square(Number)
+print("The square of", Number, "is:", result)
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+3. Using max() and min() functions display the maximum and minimum of 5 random
+numbers.
+
+# Accept 5 numbers from the user
+numbers = [float(input("Enter a number: ")) for _ in range(5)]
+
+# Display the maximum and minimum numbers
+print("Maximum number:", max(numbers))
+print("Minimum number:", min(numbers))
+--------------------------------------------------------------------------------------------------------------------------
+
+
+4. Accept a name from the user and display that in lower case using lower() function
+
+# Accept a name from the user
+name = input("Enter your name: ")
+
+# Convert the name to lowercase and display it
+print("Your name in lowercase is:", name.lower())
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+5. Write a lambda function that takes one argument and returns 'Positive' if the number is
+greater than 0, 'Negative' if it's less than 0, and 'Zero' if it's 0. Test it with different
+numbers
+
+
+# Lambda function to classify a number
+check_number = lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
+
+# Input from the user
+Variable = int(input("Enter a number: "))
+
+# Output the result
+print("The number is:",check_number(Variable))
